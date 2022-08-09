@@ -45,7 +45,7 @@ PATH_TO_POETRY_ENV="$HOME/.local/bin"
 
 if [ -f "$PATH_TO_POETRY_ENV" ] ; then
     # shellcheck source=/dev/null
-    . "$PATH_TO_POETRY_ENV"
+    export PATH="$PATH_TO_POETRY_ENV:$PATH"
 fi
 
 REQUIREMENTS_FILE="requirements.txt"

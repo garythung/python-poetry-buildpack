@@ -41,7 +41,7 @@ curl -sSL https://install.python-poetry.org \
     | python3 \
     | indent
 
-PATH_TO_POETRY_ENV="$HOME/.poetry/env"
+PATH_TO_POETRY_ENV="$HOME/.local/bin"
 
 if [ -f "$PATH_TO_POETRY_ENV" ] ; then
     # shellcheck source=/dev/null

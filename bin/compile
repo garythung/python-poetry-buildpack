@@ -43,10 +43,8 @@ curl -sSL https://install.python-poetry.org \
 
 PATH_TO_POETRY_ENV="$HOME/.local/bin"
 
-if [ -f "$PATH_TO_POETRY_ENV" ] ; then
-    # shellcheck source=/dev/null
-    export PATH="$PATH_TO_POETRY_ENV:$PATH"
-fi
+# shellcheck source=/dev/null
+export PATH="$PATH_TO_POETRY_ENV:$PATH"
 
 REQUIREMENTS_FILE="requirements.txt"
 
